@@ -1,0 +1,37 @@
+<html>
+	<body>
+		<table border=1>
+			<tr>
+				<th>Name</th>
+				<th>Story</th>
+			</tr>
+			<tr>
+				<td id="p1"></td>
+				<td id="s1"></td>
+			</tr>
+			<tr>
+				<td id="p2"></td>
+				<td id="s2"></td>
+			</tr>
+		</table>
+		Name:<span id="p3"></span>
+		Story:<span id="s3"></span><br>
+		Name:<span id="p4"></span>
+		Story:<span id="s4"></span><br>
+	</body>
+	<script >
+		x=[{"names":"Abhishek","story":"A1"},
+	{"names":"Avi","story":"A2"},
+	{"names":"Kiish","story":"A3"},
+	{"names":"IceJJ","story":"A4"}];
+	    //var x=JSON.parse(myOb);
+		document.getElementById("p1").innerHTML=x[0].names;
+		document.getElementById("s1").innerHTML=x[0].story;
+		document.getElementById("p2").innerHTML=x[1].names;
+		document.getElementById("s2").innerHTML=x[1].story;
+		document.getElementById("p3").innerHTML=x[2].names;
+		document.getElementById("s3").innerHTML=x[2].story;
+		document.getElementById("p4").innerHTML=x[3].names;
+		document.getElementById("s4").innerHTML=x[3].story;
+	</script>
+</html>

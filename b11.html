@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Patient Details</title>
+</head>
+<body>
+	<table border="1" width="100%">
+		<tr>
+			<th colspan="2">Hospital Details</th>
+		</tr>
+		<tr>
+			<th>Hospital Name</th>
+			<th>Location</th>
+		</tr>
+		<tr>
+			<td id="hname"></td>
+			<td id="loc"></td>
+		</tr>
+		<tr>
+			<td id="pat" onmouseover="myfunc()" colspan="2" class="pd" onmouseout="myfunc2()">Patient Details</td>
+		</tr>
+	</table>
+	<h3>Name:</h3><p id="name"></p>
+	<h3>Aadhar No:</h3><p id="ano"></p>
+	<h3>Tests:</h3><p id="test"></p>
+</body>	
+<script type="text/javascript">
+	Patient={"names":"Abhishek","Ano":"1234567","tests":["ECG","Full-Body","Blood-Sugar","Blood-Pressure"]};
+	Hospital={"names":"Shah","loc":"Bengaluru"};
+	document.getElementById("hname").innerHTML=Hospital.names;
+	document.getElementById("loc").innerHTML=Hospital.loc;
+	
+	function myfunc(){
+		document.getElementById("name").innerHTML=Patient.names;
+		document.getElementById("ano").innerHTML=Patient.Ano;
+		var x="";
+		for (i in Patient.tests) 
+      		x += Patient.tests[i] + "&nbsp&nbsp";
+  		document.getElementById("test").innerHTML=x;
+	}
+
+	function myfunc2(){
+		document.getElementById("name").innerHTML="";
+		document.getElementById("ano").innerHTML="";
+		document.getElementById("test").innerHTML="";
+	}
+</script>
+<style>
+	table {
+    text-align:center;
+    width: 100%;
+  }
+	td {
+      font-size:large;
+  		}
+  th {
+    font-size: x-large;
+    }
+  td.pd:hover {
+    color:white;
+    background-color:purple;
+	}
+</style>
+</html>

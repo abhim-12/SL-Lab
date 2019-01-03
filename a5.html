@@ -1,0 +1,57 @@
+<html>
+	<body>
+		<table border=1 width="100%">
+			<tr>
+				<th>Name</th>
+				<th>Title</th>
+				<th>Country</th>
+				<th>Publication</th>
+			</tr>
+			<tr>
+				<td id="p1"></td>
+				<td id="p2"></td>
+				<td id="p3"></td>
+				<td id="p4"></td>
+			</tr>
+			<tr>
+				<td id="p5"></td>
+				<td id="p6"></td>
+				<td id="p7"></td>
+				<td id="p8"></td>
+			</tr>
+		</table>
+		<p>Name:<span id="p9"></span><br>
+		Title:<span id="p10"></span><br>
+		Country:<span id="p11"></span><br>
+		Publication:<span id="p12"></span><br></p>
+
+		<p>Name:<span id="p13"></span><br>
+		Title:<span id="p14"></span><br>
+		Country:<span id="p15"></span><br>
+		Publication:<span id="p16"></span><br></p>
+
+	</body>
+	<script type="text/javascript">
+		myObj=[{"names":"JK Rowling","titles":"Harry Potter","country":"UK","year":"2000"},{"names":"Dan Brown","titles":"Inferno","country":"USA","year":"2013"},{"names":"Jeffery Archer","titles":"BKS","country":"USA","year":"2014"},{"names":"George RR Martin","titles":"GOT","country":"UK","year":"2000"}];
+		document.getElementById("p1").innerHTML=myObj[0].names;
+		document.getElementById("p2").innerHTML=myObj[0].titles;
+		document.getElementById("p3").innerHTML=myObj[0].country;
+		document.getElementById("p4").innerHTML=myObj[0].year;
+
+		document.getElementById("p5").innerHTML=myObj[1].names;
+		document.getElementById("p6").innerHTML=myObj[1].titles;
+		document.getElementById("p7").innerHTML=myObj[1].country;
+		document.getElementById("p8").innerHTML=myObj[1].year;
+
+		document.getElementById("p9").innerHTML=myObj[2].names;
+		document.getElementById("p10").innerHTML=myObj[2].titles;
+		document.getElementById("p11").innerHTML=myObj[2].country;
+		document.getElementById("p12").innerHTML=myObj[2].year;
+
+		document.getElementById("p13").innerHTML=myObj[3].names;
+		document.getElementById("p14").innerHTML=myObj[3].titles;
+		document.getElementById("p15").innerHTML=myObj[3].country;
+		document.getElementById("p16").innerHTML=myObj[3].year;
+
+	</script>
+</html>

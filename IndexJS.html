@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    	<title>Form Details</title>
+  	</head>
+    <body>
+        <h1> ***Register here*** </h1>
+        <h5> {{msg}} </h5>
+
+		<form action="{{url_for('indexJS')}}" method="POST" name="form1">
+		 	USN (Eg. 1MS02IS001) :
+            <input name = "usn" type="text" id="u"/><br>
+		  	D.O.B (Eg. dd/mm/yyyy) :
+            <input name = "dob" type="text" id="d" /><br>
+            Marks:<br>
+            <input type="text" name="mark1" id="m1"><br>
+            <input type="text" name="mark2" id="m2"><br>
+            <input type="text" name="mark3" id="m3"><br>
+			<p><input type = "submit" name = "***Register***"/></p>
+		</form>
+    </body>
+</html>
